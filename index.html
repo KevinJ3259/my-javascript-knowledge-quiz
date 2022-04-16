@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Test Your Sports Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scores">
+        <a href="high-score.html"></a>
+        High Score:
+    </div>
+    <div class="timer">
+        Timer: <span id="time">0</span>
+    </div>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+
+            <h1>Sports Knowledge Challenge</h1>
+            <p>Try to answer the sports related questions within the limited time.</p>
+            <button id="start">Let's Get Started</button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h3 id="questions-title">
+            </h3>
+            <div class="choices" id="choices">
+            </div>
+
+
+        </div>
+
+        <div id="end-screen" class="hide">
+
+            <h3>Quiz Completed</h3>
+            <p>Your final score is<span id="final-score">
+
+            </span></p>
+            <p>Enter your initials
+                <input type="text" id="initials">
+                <button id="submit">Submit</button>
+            </p>
+
+        </div>
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
