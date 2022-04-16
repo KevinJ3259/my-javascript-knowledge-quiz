@@ -1,4 +1,4 @@
-const questions=[
+let questions=[
     {
         title:"Who is the MLB Home Run Champion?",
         choices:[

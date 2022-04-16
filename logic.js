@@ -20,7 +20,7 @@ const startQuiz=()=>{
   timerId = setInterval(clockTick, 1000);
   
   timerEl.textContent = time;
-  getQuestion();
+  getQuestions();
 }
 
 // function Kevin () {
@@ -32,8 +32,7 @@ const startQuiz=()=>{
 const getQuestions=()=>{
 
     let currentQuestion=questions[currentQuestionIndex];
-    let titleEl = document.getElementById("question-title");
-
+    let titleEl=document.getElementById("questions-title");
     titleEl.textContent = currentQuestion.title;
     choicesEl.innerHTML = "";
     currentQuestion.choices.forEach(function(choice, i) {
@@ -66,6 +65,41 @@ const questionClick=()=>{
       if (currentQuestionIndex === questions.length) {
         quizEnd();
       } else {
-        getQuestion();
+        getQuestions();
       } 
 }
+const quizEnd=()=>{
+  clearInterval(timerId);
+  let endScreenEl=document.getElementById("end-screen");
+  endScreenEl.removeAttribute("class");
+  let finalScoreEl=document.getElementById("final-score");
+  finalScoreEl.textContent=time;
+  questionsEl.setAttribute("class", "hide");
+}
+const clockTick=()=>{
+  time--;
+  timerEl.textContent=time;
+  if(time <=0){
+    quizEnd();
+  }
+}
+const saveHighScore=()=>{
+  let initials=initialsEl.value.trim();
+  if(initials!==""){
+    let highscores=JSON.parse(window.localStorage.getItem("highscores"))||[];
+    let newScore={
+      score:time, initials:initials
+    };
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    window.location.href="highscore.html";
+  }
+}
+const checkForEnter=(e)=>{
+  if(e.key==="Enter"){
+    saveHighScore();
+  }
+}
+submitBtn.onclick=saveHighScore;
+startBtn.onclick=startQuiz;
+initialsEl.onkeyup=checkForEnter;
