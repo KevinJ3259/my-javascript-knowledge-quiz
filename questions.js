@@ -1,201 +1,193 @@
 let questions=[
     {
-        title:"Who is the MLB Home Run Champion?",
+        title:"Inside which HTML element do we put the Javascript?",
         choices:[
-            "Ken Griffey, Jr",
-            "Hank Aaron",
-            "Jackie Robinson",
-            "Bill Russell"
+            "<script>",
+            "<js>",
+            "<scripting>",
+            "<javascript>"
         ],
-        answer:"Hank Aaron"
+        answer:"<script>"
     },
     {
-        title:"Who is the NBA Scoring Champion?",
+        title:"Where is the correct place to insert a JavaScript?",
         choices:[
-            "Kobe Bryant",
-            "Michael Jordan",
-            "Kareem Abdul Jabbar",
-            "Lebron James"
+            "The <head> section",
+            "Both the <head> section and the <body> section are correct",
+            "The <body> section"
         ],
-        answer:"Kareem Abdul Jabbar"
+        answer:"Both the <head> section and the <body> section are correct"
     },
     {
-        title:"Who scored the most points in a single NBA game?",
+        title:"What is the correct syntax for referring to an external script called "xxx.js"?",
         choices:[
-            "Wilt Chamberlin",
-            "Michael Jordan",
-            "Shaquille O'Neal",
-            "Dennis Rodman"
+            "<script src="xxx.js">",
+            "<script href="xxx.js">",
+            "<script name="xxx.js">"
         ],
-        answer:"Wilt Chamberlin"
+        answer:"<script src="xxx.js">"
     },
     {
-        title:"Who broke the most backboards in the NBA?",
+        title:"The external JavaScript file must contain the <script> tag.",
         choices:[
-            "Hakeem Olajawon",
-            "Daryl Dawkins",
-            "Shaquille O'Neal",
-            "Jeremy Lane"
+            "False",
+            "True"
         ],
-        answer:"Shaquille O'Neal"
+        answer:"False"
     },
     {
-        title:"How many fouls can a NBA player have before fouling out?",
+        title:"How do you write "Hello World" in an alert box?",
         choices:[
-            "8",
-            "7",
-            "5",
-            "6"
+            "alert("Hello World");",
+            "alertBox("Hello World");",
+            "msgBox("Hello World");,
+            "msg("Hello World);
         ],
-        answer:"6"
+        answer:"alert("Hello World");"
     },
     {
-        title:"How many Superbowl Lombardi Tropy's do the Raiders have?",
+        title:"How do you create a function in JavaSCript?",
         choices:[
-            "3",
-            "4",
-            "5",
-            "6"
+            "function myFunction()",
+            "function = myFunction()",
+            "function:myFunction()"
         ],
-        answer:"3"
+        answer:"function myFunction()"
     },
     {
-        title:"What former NFL coach has the longest tenure?",
+        title:"How do you call a function named "myFunction"?",
         choices:[
-            "George Halas",
-            "Hank Stram",
-            "Tom Landry",
-            "Don Shula"
+            "call myFunction()",
+            "call function myFunction()",
+            "myFunction()"
         ],
-        answer:"George Halas"
+        answer:"myFunction()"
     },
     {
-        title:"What team did Jackie Robinson play for in the MLB?",
+        title:"How to write an if statement in JavaScript?",
         choices:[
-            "Cincinnati Reds",
-            "Kansas City Monarchs",
-            "Kansas City Royals",
-            "Brooklyn Dodgers"
+            "if i==5 then",
+            "if (i==5)",
+            "if i=5 then",
+            "if i=5"
         ],
-        answer:"Brooklyn Dodgers"
+        answer:"if (i==5)"
     },
     {
-        title:"What player played all 5 positions as a rookie in an NBA Game and won a championship his rookie year?",
+        title:"How to write an IF statement for executing some code if "i" is NOT equal to 5?",
         choices:[
-            "Michael Jordan",
-            "Kevin Durant",
-            "Magic Johnson",
-            "Clyde Drexler"
+            "if (i!=5)",
+            "if (i<>5)",
+            "if i<>5",
+            "if i=!5 then"
         ],
-        answer:"Magic Johnson"
+        answer:"if (i!=5)"
     },
     {
-        title:"What former NFL player scored the most touchdowns?",
+        title:"How does a WHILE loop start?",
         choices:[
-            "Jerry Rice",
-            "Adrian Peterson",
-            "Emmitt Smith",
-            "LaDainian Tomlinson"
+            "while (i<=10)",
+            "while (i<=10;i++)",
+            "while i=1 to 10"
         ],
-        answer:"Jerry Rice"
+        answer:"while (i<=10)"
     },
     {
-        title:"What former MLB pitcher struck out the most batters?",
+        title:"How does a FOR loop start?",
         choices:[
-            "Orel Hershiser",
-            "Nolan Ryan",
-            "Pedro Martinez",
-            "Clayton Kershaw"
+            "for (i=0; i<=5)",
+            "for i=1 to 5",
+            "for (i<=5; i++)",
+            "for (i=0; i<=5; i++)"
         ],
-        answer:"Nolan Ryan"
+        answer:"for (i=0; i<=5; i++)"
     },
     {
-        title:"Who has the most home runs in a single MLB game?",
+        title:"How can you add a comment in a JavaScript?",
         choices:[
-            "Mark Whiten",
-            "Mark McGuire",
-            "Sammy Sosa",
-            "Aaron Judge"
-        ],
-        answer:"Mark Whiten"
+            "//This is a comment",
+            "'This is a comment",
+            "<!--This is a comment-->"
+        ],    
+        answer:"//This is a comment"
     },
     {
-        title:"What former MLB player have the most hits?",
+        title:"How to insert a comment that has more than one line"?",
         choices:[
-            "Pete Rose",
-            "Vladimir Guerrero, Jr",
-            "Roberto Clemente",
-            "Barry Bonds"
+            "/*This comment has"
+            "more than one line*/",
+            "//This comment has"
+            "more than one line//",
+            "<!--This comment has"
+            "more than one line-->"
         ],
-        answer:"Pete Rose"
+        answer:"/*This comment has"
+                "more than one line*/"
     },
     {
-        title:"What former NFL coach has the longest tenure?",
+        title:"What is the correct way to write a JavaScript array?",
         choices:[
-            "George Halas",
-            "Hank Stram",
-            "Tom Landry",
-            "Don SHula"
+            "var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")",
+            "var colors = (1:"red", 2:"green", 3:"blue")",
+            "var colors = ["red", "green", "blue"]",
+            "var colors = "red", "green", "blue""
         ],
-        answer:"George Halas"
+        answer:"var colors = ["red", "green", "blue"]"
     },
     {
-        title:"What two NFL teams have the most NFL Lombardi Trophies?",
+        title:"How do you round the number 7.25, to the nearest integer?",
         choices:[
-            "Patriots and Cowboys",
-            "Patriots and Packers",
-            "Raiders and Broncos",
-            "Patriots and Steelers"
+            "round(7.25)",
+            "rnd(7.25)",
+            "Math.round(7.25)",
+            "Math.rnd(7.25)"
         ],
-        answer:"Patriots and Steelers"
+        answer:"Math.round(7.25)"
     },
     {
-        title:"What former or current NBA player won the most NBA Championships?",
+        title:"How do you find the number with the highest value of x and y?",
         choices:[
-            "Bill Russell",
-            "Sam Jones",
-            "John Havlicek",
-            "Robert Horry"
+            "ceil(x, y)",
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)"
         ],
-        answer:"Bill Russell"
+        answer:"Math.max(x, y)"
     },
     {
-        title:"What former or current NBA player won the most MVP awards?",
+        title:"What What is the correct JavaScript syntax for opening a new window called "w2"?",
         choices:[
-            "Kareem Abdul Jabbar",
-            "Larry Bird",
-            "Magic Johnson",
-            "Michael Jordan"
+            "w2 = window.new("http://www.w3schools.com");",
+            "w2 = window.open("http://www.w3schools.com");",
         ],
-        answer:"Kareem Abdul Jabbar (6)"
+        answer:"w2 = window.open("http://www.w3schools.com");"
     },
     {
-        title:"What NBA team drafted Kobe Bryant in 1996?",
+        title:"JavaScript is the same as Java.",
         choices:[
-            "Charlotte Hornets",
-            "Los Angeles Lakers",
-            "Golden State Warriors",
-            "Philadelphia 76ers"
+            "False",
+            "True"
         ],
-        answer:"Charlotte Hornets"
+        answer:"False"
     },
     {
-        title:"Who has won more tennis grand slam titles, Venus Williams or Serena Williams?",
+        title:"Which event occurs when the user clicks on an HTML element?",
         choices:[
-            "Venus Williams",
-            "Serena Williams"
+            "onchange",
+            "onmouseclick",
+            "onclick",
+            "onmouseover"
         ],
-        answer:"Serena Williams"
+        answer:"onclick"
     },
     {
-        title:"What's the diameter of a basketball hoop in inches?",
+        title:"How do you declare a JavaScript variable?",
         choices:[
-            "14 inches",
-            "15 inches",
-            "18 inches",
-            "12 inches"
+            "var carName;",
+            "v carName;",
+            "variable carName;"
         ],
-        answer:"18 inches"
+        answer:"var carName;"
     },
 ]
 
