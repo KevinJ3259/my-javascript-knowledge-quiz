@@ -19,13 +19,13 @@ let questions=[
         answer:"Both the <head> section and the <body> section are correct"
     },
     {
-        title:"What is the correct syntax for referring to an external script called "xxx.js"?",
+        title:"What is the correct syntax for referring to an external script called 'xxx.js'?",
         choices:[
-            "<script src="xxx.js">",
-            "<script href="xxx.js">",
-            "<script name="xxx.js">"
+            "<script src='xxx.js'>",
+            "<script href='xxx.js'>",
+            "<script name='xxx.js'>"
         ],
-        answer:"<script src="xxx.js">"
+        answer:"<script src='xxx.js'>"
     },
     {
         title:"The external JavaScript file must contain the <script> tag.",
@@ -36,14 +36,14 @@ let questions=[
         answer:"False"
     },
     {
-        title:"How do you write "Hello World" in an alert box?",
+        title:"How do you write 'Hello World' in an alert box?",
         choices:[
-            "alert("Hello World");",
-            "alertBox("Hello World");",
-            "msgBox("Hello World");,
-            "msg("Hello World);
+            "alert('Hello World');",
+            "alertBox('Hello World');",
+            "msgBox('Hello World');",
+            "msg('Hello World');"
         ],
-        answer:"alert("Hello World");"
+        answer:"alert('Hello World');"
     },
     {
         title:"How do you create a function in JavaSCript?",
@@ -55,7 +55,7 @@ let questions=[
         answer:"function myFunction()"
     },
     {
-        title:"How do you call a function named "myFunction"?",
+        title:"How do you call a function named 'myFunction'?",
         choices:[
             "call myFunction()",
             "call function myFunction()",
@@ -74,7 +74,7 @@ let questions=[
         answer:"if (i==5)"
     },
     {
-        title:"How to write an IF statement for executing some code if "i" is NOT equal to 5?",
+        title:"How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
         choices:[
             "if (i!=5)",
             "if (i<>5)",
@@ -112,27 +112,23 @@ let questions=[
         answer:"//This is a comment"
     },
     {
-        title:"How to insert a comment that has more than one line"?",
+        title:"How to insert a comment that has more than one line?",
         choices:[
-            "/*This comment has"
-            "more than one line*/",
-            "//This comment has"
-            "more than one line//",
-            "<!--This comment has"
-            "more than one line-->"
+            "/*This comment has more than one line*/",
+            "//This comment has more than one line//",
+            "<!--This comment has more than one line-->"
         ],
-        answer:"/*This comment has"
-                "more than one line*/"
+        answer:"/*This comment has more than one line*/"
     },
     {
         title:"What is the correct way to write a JavaScript array?",
         choices:[
-            "var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")",
-            "var colors = (1:"red", 2:"green", 3:"blue")",
-            "var colors = ["red", "green", "blue"]",
-            "var colors = "red", "green", "blue""
+            "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+            "var colors = (1:'red', 2:'green', 3:'blue')",
+            "var colors = ['red', 'green', 'blue']",
+            "var colors = 'red', 'green', 'blue'"
         ],
-        answer:"var colors = ["red", "green", "blue"]"
+        answer:"var colors = ['red', 'green', 'blue']"
     },
     {
         title:"How do you round the number 7.25, to the nearest integer?",
@@ -155,12 +151,12 @@ let questions=[
         answer:"Math.max(x, y)"
     },
     {
-        title:"What What is the correct JavaScript syntax for opening a new window called "w2"?",
+        title:"What What is the correct JavaScript syntax for opening a new window called 'w2'?",
         choices:[
-            "w2 = window.new("http://www.w3schools.com");",
-            "w2 = window.open("http://www.w3schools.com");",
+            "w2 = window.new('http://www.w3schools.com');",
+            "w2 = window.open('http://www.w3schools.com');",
         ],
-        answer:"w2 = window.open("http://www.w3schools.com");"
+        answer:"w2 = window.open('http://www.w3schools.com');"
     },
     {
         title:"JavaScript is the same as Java.",
