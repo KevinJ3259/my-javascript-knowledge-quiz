@@ -1,4 +1,4 @@
-# Sports Quiz
+# My JavaScript Knowledge Quiz
 
 
 ## Table Of Contents:
@@ -14,9 +14,9 @@ In this application, you will witness my use of ReactJS along with ReactHooks an
 
 ## Deployment: 
 
-[GitHub] Repo: https://github.com/KevinJ3259/sports-quiz
+[GitHub] Repo: https://github.com/KevinJ3259/my-javascript-knowledge-quiz
 
-GitHub Pages:  https://kevinj3259.github.io/sports-quiz/
+GitHub Pages:  https://kevinj3259.github.io/my-javascript-knowledge-quiz/
 
 ![picture](image.png)
 
