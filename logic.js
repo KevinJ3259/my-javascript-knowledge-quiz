@@ -9,6 +9,10 @@ let submitBtn = document.getElementById("submit");
 let initialsEl = document.getElementById("initials");
 let feedbackEl = document.getElementById("feedback");
 let startBtn = document.getElementById("start");
+let endScreenEl = document.getElementById("end-screen");
+let finalScoreEl = document.getElementById("final-score");
+let highScoreScreenEl = document.getElementById("high-scores");
+let highScoreEl = document.getElementById("scores");
 
 const startQuiz=()=>{
   
@@ -45,8 +49,8 @@ const getQuestions=()=>{
         choicesEl.appendChild(choiceNode);
       });
 }
-const questionClick=()=>{
-    if (this.value !== questions[currentQuestionIndex].answer) {
+const questionClick=(event)=>{
+    if (event.target.value !== questions[currentQuestionIndex].answer) {
 
         time -= 15;
         if (time < 0) {
@@ -58,11 +62,11 @@ const questionClick=()=>{
         feedbackEl.textContent = "I'll let you have this one!";
       }
       feedbackEl.setAttribute("class", "feedback");
-      setTimeout(function() {
-        feedbackEl.setAttribute("class", "feedback hide");
-      }, 1000);
+      // setTimeout(function() {
+      //   feedbackEl.setAttribute("class", "feedback hide");
+      // }, 1000);
       currentQuestionIndex++;
-      if (currentQuestionIndex === questions.length) {
+      if (currentQuestionIndex === questions.length || time===0) {
         quizEnd();
       } else {
         getQuestions();
@@ -70,17 +74,26 @@ const questionClick=()=>{
 }
 const quizEnd=()=>{
   clearInterval(timerId);
-  let endScreenEl=document.getElementById("end-screen");
-  endScreenEl.removeAttribute("class");
-  let finalScoreEl=document.getElementById("final-score");
+  endScreenEl.classList.remove("hide");
+  questionsEl.classList.add("hide");
+  feedbackEl.classList.add("hide");
   finalScoreEl.textContent=time;
-  questionsEl.setAttribute("class", "hide");
 }
 const clockTick=()=>{
   time--;
   timerEl.textContent=time;
   if(time <=0){
     quizEnd();
+  }
+}
+const showHighScores=()=>{
+  endScreenEl.classList.add("hide");
+  highScoreScreenEl.classList.remove("hide");
+  let highscores=JSON.parse(window.localStorage.getItem("highscores"))||[];
+  for(let highscore of highscores){
+    const scoreEl=document.createElement("div");
+    scoreEl.textContent=highscore.score+" - "+highscore.initials;
+    highScoreEl.appendChild(scoreEl);
   }
 }
 const saveHighScore=()=>{
@@ -92,7 +105,8 @@ const saveHighScore=()=>{
     };
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
-    window.location.href="highscore.html";
+
+  showHighScores();
   }
 }
 const checkForEnter=(e)=>{
