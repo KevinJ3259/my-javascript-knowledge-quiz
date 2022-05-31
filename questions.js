@@ -151,7 +151,7 @@ let questions=[
         answer:"Math.max(x, y)"
     },
     {
-        title:"What What is the correct JavaScript syntax for opening a new window called 'w2'?",
+        title:"What is the correct JavaScript syntax for opening a new window called 'w2'?",
         choices:[
             "w2 = window.new('http://www.w3schools.com');",
             "w2 = window.open('http://www.w3schools.com');",
